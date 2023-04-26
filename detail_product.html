@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./access/img/logoicon.png" />
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/all.css">
+
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="./access/css/style.css">
+    <link rel="stylesheet" href="./access/css/detail_product.css">
+</head>
+
+<body>
+
+    <header id="scrollHeader">
+        <a href="./index.html" class="logo"><img src="./access/img/logo.png" alt=""></a>
+        <ul class="navbar">
+            <li><a class="active1" href="./index.html">Home</a></li>
+            <li><a href="./shop.html">Shop</a></li>
+            <li><a href="./blog.html">Blog</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./pages.html">Pages</a></li>
+        </ul>
+        <div class="main">
+            <a href="./cart.html" class="cart-menu">
+                <ion-icon name="cart-outline"></ion-icon>
+            </a>
+
+            <a href="./login.html" class="user-menu">
+                <ion-icon name="person-outline"></ion-icon>
+            </a>
+
+            <div class="bx bx-menu" id="menu-icon">
+                <ion-icon name="menu-outline"></ion-icon>
+            </div>
+        </div>
+    </header>
+
+
+    <!-- detail products start -->
+
+    <div class="detail--product">
+        <div class="detail--product--left">
+            <img src="./access/img/product/product1.jpg" title="" />
+        </div>
+        <div class="detail--product--right">
+            <h1 class="detail--product--right-title">Impatiens</h1>
+            <h3 class="detail--product--right-price">$45</h3>
+
+            <p>Lorem ipsum dolor sit amet, an vix dictas deseruisse reformidans. An vel corpora facilisi. Vitae mollis
+                euripidis ex cum, sed in primis commodo reformidans.</p>
+            <br>
+            <div class="detail--product--right-container">
+                <input class="detail--product--right-input" type="number" name="quantity" min="1" max="10"
+                    placeholder="1">
+                <a href="./cart.html"><button class="detail--product--right-btn">
+                        Add to cart
+
+                    </button></a>
+            </div>
+
+            <hr>
+            <br>
+            <p>Category: Flowers</p>
+            <p>Tags: lush, seasonal, textured</p>
+
+        </div>
+
+    </div>
+
+    <!-- chi tiết sản phẩm, đánh giá,lưu ý sử dụng -->
+    <div class="tabs_cotainer">
+        <div class="tabs_cotainer_products">
+            <!-- Tab links -->
+            <div class="tabs">
+                <button class="tablinks active" data-electronic="allproducts">Chi tiết sản phẩm</button>
+                <button class="tablinks" data-electronic="Microcontrollers">Đánh giá sản phẩm</button>
+                <button class="tablinks" data-electronic="module">Lưu ý sử dụng</button>
+            </div>
+
+            <!-- Tab content -->
+            <div class="wrapper_tabcontent">
+                <div id="allproducts" class="tabcontent active">
+
+                    <p>Với vẻ đẹp, hình dáng cùng hương thơm nổi bật, hoa hồng là hoa biểu trưng và được ưa chuộng nhiều
+                        nhất ở
+                        phương Tây, tương ứng trong tổng thể với hình tượng hoa sen ở châu Á, cả hai đều gần gũi với
+                        biểu
+                        tượng
+                        bánh xe. Trong văn hóa Ấn Độ, bông hồng vũ trụ Triparasundari được dùng làm vật đại diện cho vẻ
+                        đẹp
+                        của
+                        người Mẹ thánh thần, biểu thị một sự hoàn mĩ trọn vẹn và không có thiếu sót. Bên cạnh đó, hoa
+                        hồng
+                        còn
+                        tượng trưng cho phần thưởng cuộc sống, tâm hồn, trái tim, tình yêu, và có thể được chiêm ngưỡng
+                        như
+                        một
+                        mandala</p>
+                </div>
+
+                <div id="Microcontrollers" class="tabcontent">
+                    <p>Trần Hà Nga
+                        <br>
+                        2023-02-11
+                        <br>
+                        Hoa đẹp và tươi quá. Mình sẽ ủng hộ shop thường xuyên ạ
+                    </p>
+
+                </div>
+
+                <div id="module" class="tabcontent">
+                    <p>Sản phẩm hầu hết là hoa tưới 100%. Khách hàng lưu ý nhẹ tay, không ném dập hoa, cũng như phơi
+                        nắng để
+                        hoa có thể tươi một cách có thể</p>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- detail products end -->
+    <!-- sản phẩm tương tự
+ -->
+    <div class="content--home">
+        <p>Similar product</p>
+
+        <h1>Other products you can choose</h1>
+
+    </div>
+    <div class="show--product" id="show">
+        <div class="show--product--item">
+            <a href="./detail_product.html">
+                <div class="show--product--item--image">
+                    <img src="./access/img/product/product1.jpg" alt="${item.name}" />
+                </div>
+                <div class="show--product--item--des">
+                    <h2>Moronto Florist</h2>
+                    <p class="price">$50</p>
+                    <a href="./cart.html" class="add-to-cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+
+                </div>
+                <div id="new">Sale</div>
+            </a>
+
+        </div>
+        <div class="show--product--item">
+            <a href="./detail_product.html">
+                <div class="show--product--item--image">
+                    <img src="./access/img/product/product2.jpg" alt="${item.name}" />
+                </div>
+                <div class="show--product--item--des">
+                    <h2>Moronto Florist</h2>
+                    <p class="price">$50</p>
+                    <a href="./cart.html" class="add-to-cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+
+                </div>
+                <div id="new">Sale</div>
+            </a>
+
+        </div>
+        <div class="show--product--item">
+            <a href="./detail_product.html">
+                <div class="show--product--item--image">
+                    <img src="./access/img/product/product3.jpg" alt="${item.name}" />
+                </div>
+                <div class="show--product--item--des">
+                    <h2>Moronto Florist</h2>
+                    <p class="price">$50</p>
+                    <a href="./cart.html" class="add-to-cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+
+                </div>
+                <div id="new">Sale</div>
+            </a>
+
+        </div>
+        <div class="show--product--item">
+            <a href="./detail_product.html">
+
+                <div class="show--product--item--image">
+                    <img src="./access/img/product/product4.jpg" alt="${item.name}" />
+                </div>
+                <div class="show--product--item--des">
+                    <h2>Moronto Florist</h2>
+                    <p class="price">$50</p>
+                    <a href="./cart.html" class="add-to-cart">
+                        <ion-icon name="cart-outline"></ion-icon>
+                    </a>
+                </div>
+                <div id="new">Sale</div>
+            </a>
+
+        </div>
+
+    </div>
+
+
+
+
+    <footer class="footer">
+        <div class="footer--container">
+            <div class="footer--row">
+                <div class="footer-col">
+                    <img class="footer-col-img" src="./access/img/logo.png" alt="">
+                    <p> Nếu bạn yêu thích hương hoa hồng Bạn phải chấp nhận những chiếc gai trên đóa hồng</p>
+
+                </div>
+                <div class="footer-col">
+                    <h4>Company</h4>
+                    <ul>
+                        <li><a href="">Home</a></li>
+                        <li><a href="">Shop</a></li>
+                        <li><a href="">Contact</a></li>
+                        <li><a href="">Pages</a></li>
+                        <li><a href="">About</a></li>
+
+
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Get Help</h4>
+                    <ul>
+                        <li><a href="">FAQ</a></li>
+                        <li><a href="">Shipping</a></li>
+                        <li><a href="">Returns</a></li>
+                        <li><a href="">Order status</a></li>
+                        <li><a href="">Payment options</a></li>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Fllow us</h4>
+                    <div class="social-link">
+
+                        <a href="">
+                            <ion-icon name="logo-facebook"></ion-icon>
+                        </a>
+                        <a href="">
+                            <ion-icon name="logo-instagram"></ion-icon>
+                        </a>
+                        <a href="">
+                            <ion-icon name="logo-tiktok"></ion-icon>
+                        </a>
+                        <a href="">
+                            <ion-icon name="chatbubbles-outline"></ion-icon>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </footer>
+
+
+
+    <!-- ---- ICON -----------  -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script>
+        //chuyển tabs
+        var tabLinks = document.querySelectorAll(".tablinks");
+        var tabContent = document.querySelectorAll(".tabcontent");
+
+        tabLinks.forEach(function (el) {
+            el.addEventListener("click", openTabs);
+        });
+
+
+        function openTabs(el) {
+            var btn = el.currentTarget; // lắng nghe sự kiện và hiển thị các element
+            var electronic = btn.dataset.electronic; // lấy giá trị trong data-electronic
+
+            tabContent.forEach(function (el) {
+                el.classList.remove("active");
+            }); //lặp qua các tab content để remove class active
+
+            tabLinks.forEach(function (el) {
+                el.classList.remove("active");
+            }); //lặp qua các tab links để remove class active
+
+            document.querySelector("#" + electronic).classList.add("active");
+            // trả về phần tử đầu tiên có id="" được add class active
+
+            btn.classList.add("active");
+            // các button mà chúng ta click vào sẽ được add class active
+        }
+    </script>
+</body>
+<script type="text/javascript" src="./access/js/scripts.js"></script>
+
+</html>

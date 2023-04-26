@@ -1,0 +1,112 @@
+:root {
+  --color_container: #0c5b47;
+  --color_secondary: #fef1e6;
+  --color_footer: #e7f0e4;
+  --bg-color: #222327;
+  --text-color: #353030;
+
+  --main-color: #0c5b47;
+}
+header {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.cart--views {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 50px;
+  color: var(--color_container);
+  margin-top: 8rem;
+}
+.table-data-views {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  flex-wrap: wrap;
+  grid-gap: 24px;
+  width: 70%;
+  color: var(--dark);
+  justify-content: center;
+  align-items: center;
+  border-radius: 6px;
+}
+.table-data-views > div {
+  border-radius: 20px;
+  background: var(--light);
+  padding: 42px 60px 10px 60px;
+  overflow-x: auto;
+}
+.table-data-views .head {
+  display: flex;
+  align-items: center;
+  grid-gap: 16px;
+  margin-bottom: 24px;
+  color: #e91e63;
+}
+.table-data-views .head h3 {
+  margin-right: auto;
+  font-size: 2rem;
+  font-weight: 600;
+}
+.table-data-views .head .bx {
+  cursor: pointer;
+}
+
+.table-data-views .order {
+  flex-grow: 1;
+  flex-basis: 500px;
+}
+.table-data-views .order table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table-data-views .order table th {
+  padding-bottom: 12px;
+  font-size: 1rem;
+  text-align: left;
+  border-bottom: 1px solid var(--grey);
+}
+.table-data-views .order table td {
+  padding: 16px 0;
+}
+.table-data-views .order thead {
+  border-bottom: 2px solid #ccc;
+}
+.table-data-views .order tbody {
+  border-bottom: 2px solid #ccc;
+}
+.table-data-views .order table tr td:first-child {
+  display: flex;
+  align-items: center;
+  grid-gap: 12px;
+  padding-left: 6px;
+}
+.table-data-views .order table td img {
+  width: 80px;
+  height: 80px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.table-data-views .order table tbody tr:hover {
+  background: var(--color_footer);
+}
+.table-data-views .order table tbody tr td ion-icon {
+  font-size: 1.5rem;
+  color: rgb(228, 74, 74);
+}
+.total--container {
+  display: flex;
+  gap: 2rem;
+  padding: 20px 0;
+  float: right;
+}
+.total {
+  padding: 20px;
+  font-weight: 600;
+  font-size: 1.5rem;
+}
+.total--btn {
+  color: var(--color_container);
+  padding: 20px 95px;
+  background-color: var(--color_secondary);
+}

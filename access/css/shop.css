@@ -1,0 +1,396 @@
+:root {
+  --color_container: #0c5b47;
+  --color_secondary: #fef1e6;
+  --color_footer: #e7f0e4;
+  --bg-color: #222327;
+  --text-color: #353030;
+
+  --main-color: #0c5b47;
+}
+header {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.store--container {
+  margin-top: 150px;
+  margin-bottom: 50px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  gap: 1rem;
+}
+.store--container--left {
+  width: 52%;
+}
+.store--container--right {
+  width: 20%;
+  height: 1055px;
+}
+.store--container--left-title {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+.store--container--left--title-left {
+  width: 40%;
+}
+.store--container--left--title-right {
+  transition: all 0.8s ease;
+  width: 25%;
+}
+.store--container--left--title-right li a ion-icon {
+  padding-left: 50px;
+}
+
+.store--container--left--title-right--group {
+  position: relative;
+  cursor: pointer;
+}
+
+.store--container--left--title-right--group label {
+  padding: 0.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.sub-menu {
+  display: none;
+}
+
+#dropdown:checked ~ .sub-menu {
+  display: block;
+  position: absolute;
+  width: 100%;
+  z-index: 1000;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: var(--color_secondary);
+}
+
+.show--product--store {
+  flex: 1;
+  /* margin-top: 5rem; */
+  display: grid;
+  grid-template-columns: 16rem 16rem 16rem;
+  justify-content: center;
+  margin-bottom: 2rem;
+  gap: 1rem;
+}
+.show--product--store--item {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  /* border: 0.01rem solid silver; */
+  position: relative;
+}
+
+.show--product--store--item--image {
+  height: 14.5em;
+  border-radius: 0.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.show--product--store--item--image img {
+  position: absolute;
+  width: 100%;
+  transition: 0.2s;
+}
+.show--product--store--item--image:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.7);
+}
+.show--product--store--item--des {
+  margin-top: 1rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  text-align: center;
+}
+.show--product--store--item--des button {
+  font-size: 1.2rem;
+  height: 3rem;
+  border: none;
+  color: #0c5b47;
+  background-color: #e7f0e4;
+  border-radius: 6rem;
+  cursor: pointer;
+  transition: 0.2s;
+  width: 50%;
+  margin-left: 5rem;
+}
+.show--product--store--item--des a ion-icon {
+  font-size: 1.8rem;
+  color: var(--color_container);
+}
+.show--product--store--item .add-to-cart {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
+  background: #fef1e6;
+  padding: 15px 18px;
+  border-radius: 100%;
+}
+.show--product--store--item .add-to-cart i {
+  font-size: 2rem;
+}
+
+.show--product--store--item:hover .add-to-cart {
+  display: block;
+}
+
+/* .show--product--item:hover .show--product--item--des .price {
+    display: none;
+  } */
+
+.show--product--store--item:hover .show--product--store--item--des h2 {
+  margin-bottom: 0;
+}
+
+/* phần phân trang */
+.woocommerce-pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+.woocommerce-pagination span {
+  padding: 10px;
+  background-color: var(--color_footer);
+  color: var(--color_container);
+  border-radius: 150px 200px;
+  text-align: center;
+}
+.woocommerce-pagination .page-numbers {
+  transition: 0.7s ease;
+
+  padding: 10px;
+}
+.woocommerce-pagination .page-numbers:hover {
+  background-color: var(--color_footer);
+  color: var(--color_container);
+  border-radius: 150px 200px;
+  text-align: center;
+}
+/* ///////////////////////// */
+/* //store left */
+
+.search--product {
+  display: flex;
+  flex-direction: column;
+  padding: 0px 10px 20px 20px;
+}
+
+.search-input {
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 5px;
+  position: relative;
+  border: 2px solid var(--color_secondary);
+  color: var(--color_container);
+}
+
+.search-input input[type="text"] {
+  border: none;
+  background-color: transparent;
+  padding: 10px;
+  width: 100%;
+  outline: none;
+  color: var(--color_container);
+}
+
+.search-input ion-icon {
+  color: var(--color_container);
+  position: absolute;
+  right: 10px;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.filter {
+  padding: 0px 10px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.search--product h3,
+.filter h3,
+.category--store h3 {
+  margin-bottom: 10px;
+  font-size: 25px;
+  font-weight: 500;
+  font-family: Quicksand, sans-serif;
+  color: var(--color_container);
+}
+
+.filter label {
+  /* display: flex; */
+  justify-content: space-between;
+  align-items: center;
+}
+.filter label p {
+  color: var(--color_container);
+  margin-top: 5px;
+}
+.filter label input[type="range"] {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  background: var(--color_secondary);
+  border-radius: 5px;
+  outline: none;
+}
+
+.filter label input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background: #70b0ae;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.filter label input[type="range"]::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  background: #70b0ae;
+  border-radius: 50%;
+  cursor: pointer;
+}
+/* //phần category */
+.category--store {
+  padding: 0px 10px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0;
+}
+.category--store ul li {
+  display: flex;
+  gap: 1rem;
+  padding: 7px 0;
+}
+.category--store ul li a {
+  color: var(--color_container);
+  font-size: 1rem;
+}
+.category--store ul li span {
+  color: var(--color_container);
+  font-size: 1rem;
+}
+/* phần intagram */
+.flower--store--container {
+  padding: 0px 10px 10px 20px;
+  display: flex;
+  flex-direction: column;
+  /* margin: 20px 0; */
+}
+.flower--store--container h2 {
+  color: var(--color_container);
+  font-weight: 300;
+  font-size: 25px;
+}
+.flower--store {
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* padding-bottom: 65px; */
+}
+.flower--store-box {
+  width: 40%;
+}
+.flower--store--container h2 {
+  color: var(--color_container);
+  font-weight: 300;
+  font-size: 25px;
+  margin-bottom: 30px;
+}
+.flower--store-box {
+  height: 6em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+}
+.flower--store-box img {
+  position: absolute;
+  width: 100%;
+  transition: 0.2s;
+}
+.flower--store-box:hover img {
+  transform: scale(1.1);
+  filter: brightness(0.9);
+}
+.flower--store-box {
+  position: relative;
+}
+
+.flower--store-box a {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/banner/insta-hover-bg.png");
+  width: 50px;
+  height: 50px;
+  padding: 10px;
+  border-radius: 50%;
+  z-index: 1;
+  opacity: 0; /* Ban đầu ẩn icon và background */
+  transition: opacity 0.3s ease-in-out; /* Hiệu ứng chuyển động mượt mà */
+}
+
+.flower--store-box a ion-icon {
+  color: #d25151;
+  width: 100%;
+  height: 100%;
+}
+
+.flower--store-box:hover a {
+  display: block;
+  opacity: 1; /* Hiển thị icon và background */
+}
+
+/* //phần follor us */
+.follow {
+  padding: 0px 10px 10px 20px;
+  margin: 20px 0;
+}
+.follow h3 {
+  font-size: 25px;
+  font-weight: 500;
+  color: var(--color_container);
+  margin-bottom: 20px;
+}
+.flower--us--icon-container {
+  display: flex;
+  gap: 1rem;
+}
+.flower--us--icon {
+  font-size: 1.5rem;
+  color: var(--color_container);
+  transition: 0.7s ease;
+}
+.flower--us--icon:hover {
+  font-size: 1.5rem;
+  background-color: var(--color_secondary);
+  color: var(--color_container);
+  padding: 10px;
+  border-radius: 50%;
+}

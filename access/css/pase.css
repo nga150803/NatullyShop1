@@ -1,0 +1,48 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+:root{
+    --color_container: #0c5b47;
+    --color_secondary: #fef1e6;
+    --color_footer: #e7f0e4;
+    --bg-color:#222327;
+    --text-color:#2d2626;
+    --main-color:#29fd53;
+
+
+}
+
+body{
+  min-height: 100vh;
+  /* background: var(--bg-color); */
+  color: var(--text-color);
+  
+}
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  button {
+    border: none;
+    background: none;
+    font: inherit;
+    cursor: pointer;
+  }
+  ion-icon,
+  span {
+    display: inline-block;
+  }
+  label,
+  img {
+    display: block;
+  }
+  input {
+    font: inherit;
+    width: 100%;
+    border: none;
+  }

@@ -1,0 +1,14 @@
+:root {
+  --color_container: #0c5b47;
+  --color_secondary: #fef1e6;
+  --color_footer: #e7f0e4;
+  --bg-color: #222327;
+  --text-color: #353030;
+
+  --main-color: #0c5b47;
+}
+header {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  background-color: #fff;
+}
+
